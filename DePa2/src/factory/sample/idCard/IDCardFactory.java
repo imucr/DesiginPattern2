@@ -17,7 +17,7 @@ public class IDCardFactory extends Factory {
 
   @Override
   protected void registerProduct(Product product) {
-    owners.add(((IDCard) product).getOwner());
+    owners.add(((IDCard) product).getOwner()); //MEMO productオブジェクトのタイプをProductからIDCardにキャストして、owner名をゲットして、ownersリスト追加
   }
 
   public List getOwners() {
